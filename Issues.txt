@@ -1,0 +1,25 @@
+-  data_transformation
+	- make functions more independent on X specification (right now: too many isinstance(X, pd.DataFrame))
+
+- delete transform_data.py
+
+- delete unneccesary preliminaries 
+	- initial_DMA_weights
+	- get_settings method?
+
+- clarify numpy panda usage
+
+
+- in DMA run_dma function:
+	- @ multiplication with x_t can be problematic as x_t can be a single value as well
+
+- recode beginnig  of data_class: transf_data(self):
+
+IMPORTANT:
+- in DMA_ECB, the dependent variable is multiplied with 4, why???ß
+	done so as well now
+	- other variables with code 5 are multiplied with 4 as well
+	- ocassions marked with "# times 4* added"
+	
+Data: 
+- include commodity price index
